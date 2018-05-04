@@ -149,7 +149,7 @@ Visualization Manager:
     - Class: rviz/Camera
       Enabled: true
       Image Rendering: background and overlay
-      Image Topic: /udacity_bot/camera1/image_raw
+      Image Topic: /udacity_bot/rgb/image_raw
       Name: Camera
       Overlay Alpha: 0.5
       Queue Size: 2
