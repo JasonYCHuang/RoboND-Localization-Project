@@ -7,6 +7,8 @@
   <arg name="depth_topic" default="/kinect/depth/image_raw"/>
   <arg name="camera_info_topic" default="/kinect/rgb/camera_info"/>  
 
+  <node pkg="tf" type="static_transform_publisher" name="kinect_frame_to_kinect" args="0 0 0 -1.5708 0 -1.5708 /kinect /kinect_frame 100"/> <!-- solve point cloud on Z axis-->
+
   <!-- Mapping Node -->
   <group ns="rtabmap">
     <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
