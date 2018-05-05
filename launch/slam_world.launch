@@ -27,7 +27,7 @@
   <include file="$(find udacity_bot)/launch/slam/teleop.launch"/>
 
   <!--mapping-->
-  <!--<include file="$(find udacity_bot)/launch/slam/mapping.launch"/>-->
+  <include file="$(find udacity_bot)/launch/slam/mapping.launch"/>
 
   <!--launch rviz-->
   <include file="$(find udacity_bot)/launch/slam/rviz.launch"/>
