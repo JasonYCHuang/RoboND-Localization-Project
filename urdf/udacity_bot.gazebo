@@ -36,7 +36,7 @@
   <!-- RGBD kinect -->
   <gazebo reference="kinect">
     <material>Gazebo/Red</material>
-    <sensor type="depth" name="kinect">
+    <sensor type="depth" name="head_kinect_sensor">
       <always_on>1</always_on>
       <update_rate>20.0</update_rate>
       <visualize>true</visualize>             
@@ -57,7 +57,7 @@
         <alwaysOn>true</alwaysOn>
         <updateRate>10.0</updateRate>
         <cameraName>kinect</cameraName>
-        <frameName>kinect_rgbd_frame</frameName>
+        <frameName>kinect</frameName>
         <imageTopicName>/kinect/rgb/image_raw</imageTopicName>
         <cameraInfoTopicName>/kinect/rgb/camera_info</cameraInfoTopicName>
         <depthImageTopicName>/kinect/depth/image_raw</depthImageTopicName>
