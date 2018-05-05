@@ -33,10 +33,10 @@
     <material>Gazebo/Blue</material>
   </gazebo>
 
-  <!-- RGBD Camera -->
-  <gazebo reference="camera">
+  <!-- RGBD kinect -->
+  <gazebo reference="kinect">
     <material>Gazebo/Red</material>
-    <sensor type="depth" name="camera1">
+    <sensor type="depth" name="kinect">
       <always_on>1</always_on>
       <update_rate>20.0</update_rate>
       <visualize>true</visualize>             
@@ -53,16 +53,16 @@
           <far>20</far>
         </clip>
       </camera>
-      <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
+      <plugin name="kinect_controller" filename="libgazebo_ros_openni_kinect.so">
         <alwaysOn>true</alwaysOn>
         <updateRate>10.0</updateRate>
-        <cameraName>camera</cameraName>
-        <frameName>camera_rgbd_frame</frameName>
-        <imageTopicName>/udacity_bot/rgb/image_raw</imageTopicName>
-        <cameraInfoTopicName>/udacity_bot/rgb/camera_info</cameraInfoTopicName>
-        <depthImageTopicName>/udacity_bot/depth/image_raw</depthImageTopicName>
-        <pointCloudTopicName>/udacity_bot/depth/points</pointCloudTopicName>
-        <depthImageCameraInfoTopicName>/udacity_bot/depth/camera_info</depthImageCameraInfoTopicName>
+        <cameraName>kinect</cameraName>
+        <frameName>kinect_rgbd_frame</frameName>
+        <imageTopicName>/kinect/rgb/image_raw</imageTopicName>
+        <cameraInfoTopicName>/kinect/rgb/camera_info</cameraInfoTopicName>
+        <depthImageTopicName>/kinect/depth/image_raw</depthImageTopicName>
+        <pointCloudTopicName>/kinect/depth/points</pointCloudTopicName>
+        <depthImageCameraInfoTopicName>/kinect/depth/camera_info</depthImageCameraInfoTopicName>
         <pointCloudCutoff>0.4</pointCloudCutoff>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
