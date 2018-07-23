@@ -4,16 +4,6 @@
 
   <xacro:include filename="$(find udacity_bot)/urdf/udacity_bot.gazebo" />
 
-  <!-- footprint LINK -->
-  <link name="robot_footprint"></link>
-
-  <!-- footprint + chassis JOINT -->
-  <joint name="robot_footprint_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0" />
-    <parent link="robot_footprint"/>
-    <child link="chassis" />
-  </joint>
-
   <!-- chassis LINK -->
   <link name='chassis'>
     <pose>0 0 0.1 0 0 0</pose>
