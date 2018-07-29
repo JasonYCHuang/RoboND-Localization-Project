@@ -1,3 +1,5 @@
+# Localization
+
 ### 1. Benchmark model
 
 ```
@@ -14,4 +16,19 @@ $ roslaunch udacity_bot mine_udacity_world.launch
 
 ```
 $ rosrun udacity_bot navigation_goal
+```
+
+
+# Mapping
+
+### 1. Benchmark model
+
+```
+$ roslaunch udacity_bot slam_world.launch 
+```
+
+### 2. Mine model
+
+```
+$ roslaunch udacity_bot slam_mine_world.launch 
 ```
