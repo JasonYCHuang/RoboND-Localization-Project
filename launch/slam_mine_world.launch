@@ -8,9 +8,9 @@
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
   <!--robot init pose params-->
-  <arg name="x" default="-2"/>
-  <arg name="y" default="2"/>
-  <arg name="z" default="0.2"/>
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="z" default="0.28"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
   <arg name="yaw" default="0"/>
